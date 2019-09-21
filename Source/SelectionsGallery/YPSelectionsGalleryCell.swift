@@ -58,7 +58,6 @@ public class YPSelectionsGalleryCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     public override var isHighlighted: Bool {
         didSet {
             UIView.animate(withDuration: 0.5,

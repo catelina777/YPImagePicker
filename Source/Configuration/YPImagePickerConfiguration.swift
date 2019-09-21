@@ -108,7 +108,7 @@ public struct YPImagePickerConfiguration {
         YPFilter(name: "Transfer", coreImageFilterName: "CIPhotoEffectTransfer"),
         YPFilter(name: "Tone", coreImageFilterName: "CILinearToSRGBToneCurve"),
         YPFilter(name: "Linear", coreImageFilterName: "CISRGBToneCurveToLinear"),
-        YPFilter(name: "Sepia", coreImageFilterName: "CISepiaTone"),
+        YPFilter(name: "Sepia", coreImageFilterName: "CISepiaTone")
         ]
     
     /// Migration
@@ -157,7 +157,7 @@ public struct YPImagePickerConfiguration {
 /// Encapsulates library specific settings.
 public struct YPConfigLibrary {
     
-    public var options: PHFetchOptions? = nil
+    public var options: PHFetchOptions?
     
     /// Set this to true if you want to force the library output to be a squared image. Defaults to false
     public var onlySquare = false
