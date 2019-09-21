@@ -216,7 +216,7 @@ class YPVideoCaptureHelper: NSObject {
     // MARK: - Orientation
 
     /// This enables to get the correct orientation even when the device is locked for orientation \o/
-    private func checkOrientation(completion: @escaping(_ orientation: AVCaptureVideoOrientation?)->()) {
+    private func checkOrientation(completion: @escaping(_ orientation: AVCaptureVideoOrientation?)->Void) {
         motionManager.accelerometerUpdateInterval = 5
         motionManager.startAccelerometerUpdates( to: OperationQueue() ) { [weak self] data, _ in
             self?.motionManager.stopAccelerometerUpdates()

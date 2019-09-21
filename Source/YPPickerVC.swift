@@ -256,8 +256,6 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
         
         label.firstBaselineAnchor.constraint(equalTo: titleView.bottomAnchor, constant: -14).isActive = true
         
-        
-        
         titleView.heightAnchor.constraint(equalToConstant: 40).isActive = true
         navigationItem.titleView = titleView
     }

@@ -137,7 +137,7 @@ class LibraryMediaManager {
                     DispatchQueue.main.async {
                         if let url = exportSession?.outputURL, exportSession?.status == .completed {
                             callback(url)
-                            if let index = self.currentExportSessions.firstIndex(of:exportSession!) {
+                            if let index = self.currentExportSessions.firstIndex(of: exportSession!) {
                                 self.currentExportSessions.remove(at: index)
                             }
                         } else {
@@ -174,4 +174,3 @@ class LibraryMediaManager {
         }
     }
 }
-
